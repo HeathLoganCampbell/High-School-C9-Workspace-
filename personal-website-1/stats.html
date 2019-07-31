@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Heath Logan Campbell's Website | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--[if IE]>
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"></script> 
+	    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	    <link href="assets/css/style.css" rel="stylesheet">
+    <![endif]-->
+    
+</head>
+<body>
+	<div class="section hero">
+		<div class="container">
+			<div class="row">
+				<div class="one-half column">
+					<h4 class="hero-heading">Heath Logan Campbell</h4>
+          			<a class="spacer-right button button-primary" onclick="alert('Yeah, nah')" href="#">Contact Me</a>
+          			<a class="spacer-right button" onclick="alert('Yeah, nah')" href="#">Need Help?</a>
+          			<a class="spacer-right button" onclick="alert('Yeah, nah')" href="#">Store</a>
+				</div>
+			</div>
+		 </div>
+		 </div>
+		 <div class="indent">
+		                 <div class="main-gallery">
+                            <div class="gallery-cell">
+                                <center>
+                                    <div id="placeholder" style="width:190px;height:190px;"></div>
+                                    <a class="button" onclick="alert('Yeah, nah')" href="#">View</a>
+                                </center>
+                            </div>
+                            <div class="gallery-cell">
+                                <center>
+                                    <h3>GitHub <i class="fa fa-github fa-1x" aria-hidden="true"></i></h3>
+                                    <p>Just my github. I don't do too much on it but it's there. Feel free to look!</p>
+                                    <a class="button" href="https://github.com/HeathLoganCampbell">View</a>
+                                </center>
+                            </div>
+                            <div class="gallery-cell">
+                                
+                            </div>
+                            <div class="gallery-cell">
+                                
+                            </div>
+                            <div class="gallery-cell">
+                                
+                            </div>
+                            <div class="gallery-cell">
+
+                            </div>
+                            <div class="gallery-cell">
+                                
+                            </div>
+                         </div>
+		     
+			            <!--<div id="slick">-->
+               <!--             <div>-->
+               <!--                 <center><h3>Example 1</h3></center>-->
+               <!--             </div>-->
+               <!--             <div>-->
+               <!--                 <center><h3>Example 2</h3></center>-->
+               <!--             </div>-->
+               <!--             <div>-->
+               <!--                 <center><h3>Example 3</h3></center>-->
+               <!--             </div>-->
+               <!--             <div>-->
+               <!--                 <center><h3>Example 4</h3></center>-->
+               <!--             </div>-->
+               <!--             <div>-->
+               <!--                 <center><h3>Example 5</h3></center>-->
+               <!--             </div>-->
+               <!--             <div>-->
+               <!--                 <center><h3>Example 6</h3></center>-->
+               <!--             </div>-->
+               <!--         </div>-->
+                        <script>
+                            function r(f){/in/.test(document.readyState)?setTimeout('r('+f+')',9):f()}
+                            r(function() {
+                                var flkty = new Flickity( '.main-gallery', {
+                                  // options
+                                  cellAlign: 'left',
+                                  contain: true,
+                                  wrapAround: true,
+                                  freeScroll: true,
+                                  pageDots: false,
+                                  autoPlay: true,
+                                  prevNextButtons: false,
+                                  autoPlay: true,
+                                //   selectedAttraction: 0.2,
+                                //   friction: 0.8,
+                                //   freeScrollFriction: 0.075,
+                                });
+                                // var slick = $('#slick').slick({
+                                //     autoplay: true,
+                                //     centerMode:true,
+                                //     autoplaySpeed: 1200,
+                                //     speed: 700,
+                                //     prevArrow: false,
+                                //     nextArrow: false,
+                                //     slidesToShow: 3,
+                                //     variableWidth: true,
+                                //     adaptiveHeight: true,
+                                // });
+                            });
+                        </script>
+                        <script type="text/javascript">
+                            $(function () {
+                                var d1 = [];
+                                for (var i = 0; i < 14; i += 0.5)
+                                    d1.push([i, Math.sin(i)]);
+                             
+                                var d2 = [[0, 3], [4, 8], [8, 5], [9, 13]];
+                             
+                                // a null signifies separate line segments
+                                var d3 = [[0, 12], [7, 12], null, [7, 2.5], [12, 2.5]];
+                                
+                                $.plot($("#placeholder"), [ d1, d2, d3 ]);
+                            });
+                        </script>
+		</div>
+			</div>
+	</div>
+	
+	<!--[if !IE]> -->
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" lazyload="1"/>
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" lazyload="1" /> 
+	    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" lazyload="1" />
+	    <link href="assets/css/style.css" rel="stylesheet" lazyload="1" />
+    <!-- <![endif]-->
+    
+	<script async type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script async src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/jquery.flot.min.js"></script>
+    </body>
+</html>

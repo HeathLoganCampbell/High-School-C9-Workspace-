@@ -1,0 +1,90 @@
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+      
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"/></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js"></script>
+      <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap@next/dist/css/bootstrap.min.css"/>
+      <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css"/>
+        
+      <title>Is it Out of Stock?!</title>
+        
+      <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+            <div class="container">
+              <div class="header clearfix">
+                <h3 class="text-muted">Is it Out of Stock?!</h3>
+            </div>
+              <!-- width="350" -->
+              
+              <div class="jumbotron">
+                
+                <h1>Ever wondered if that one thing, was not in stock?</h1>
+                <p class="lead">Well now you can!</p>
+              </div>
+              
+              <center>
+                  <div id="out-of-stock-table">
+                    <div >
+                      <div >
+                        <b-form-fieldset horizontal label="Rows per page">
+                          <b-form-select :options="pageOptions" v-model="perPage" />
+                        </b-form-fieldset>
+                      </div>
+                      <div>
+                        <b-form-fieldset horizontal label="Filter" >
+                          <b-form-input v-model="filter" placeholder="Type to Search" />
+                        </b-form-fieldset>
+                      </div>
+                    </div>
+
+                    <!-- Main table element -->
+                    <b-table striped hover show-empty
+                             :items="items"
+                             :fields="fields"
+                             :current-page="currentPage"
+                             :per-page="perPage"
+                             :filter="filter"
+                             :sort-by.sync="sortBy"
+                             :sort-desc.sync="sortDesc"
+                             @filtered="onFiltered"
+                    >
+                      <template slot="name" scope="row">{{row.value.first}} {{row.value.last}}</template>
+                      <template slot="actions" scope="row">
+                        <!-- We use click.stop here to prevent a 'row-clicked' event from also happening -->
+                        <b-btn size="sm" @click.stop="details(row.item,row.index,$event.target)">Details</b-btn>
+                      </template>
+                    </b-table>
+                
+                    <p>
+                      Sort By: {{ sortBy || 'n/a' }}, Direction: {{ sortDesc ? 'descending' : 'ascending' }}
+                    </p>
+                
+                    <b-pagination class="pull-right" :total-rows="totalRows" :per-page="perPage" v-model="currentPage" />
+                
+                    <!-- Details modal -->
+                    <b-modal id="modal1" @hide="resetModal" ok-only>
+                      <h4 class="my-1 py-1" slot="modal-header">Index: {{ modalDetails.index }}</h4>
+                      <pre>{{ modalDetails.data }}</pre>
+                    </b-modal>
+                  </div>
+              </center>
+              
+              <footer class="footer">
+                <p>&copy; 2017 Bevs.Network, Inc.</p>
+              </footer>
+            </div> <!-- /container -->
+    </body>
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="//unpkg.com/vue@2.2.6/dist/vue.min.js"></script>
+    <script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
+    <script type="text/javascript" src="js/table_fetcher.js"></script>
+</html>

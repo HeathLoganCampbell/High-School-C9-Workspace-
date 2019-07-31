@@ -1,0 +1,86 @@
+*
+	    {
+	        margin: 0px;
+	        padding: 0px;
+	        box-sizing: border-box;
+	    }
+	
+		body
+		{
+			background: #34495e;
+			color: #ecf0f1;
+		}
+	
+		.section
+		{
+			padding: 8rem 0 7rem;
+		}
+		
+		h1, h2, h3, h4 {
+		  color: #fff;
+		  text-transform: uppercase;
+		  font-size: 26px;
+		  margin: 0px 0px 25px 0px;
+		  line-height: 47px;
+		  letter-spacing: 2px;
+		}
+		
+		.title {
+		  transform: translateX(-50%) rotate(-10deg);
+		  display: block;
+		  float: left;
+		  left: 50%;
+		  position: relative;
+		}
+		
+		.gallery-cell
+        {
+            outline: none;
+            height: 200px; 
+            width: 200px; 
+            margin: 0px 20px;
+            border: 1px solid #FFF;
+            border-radius: 0.8em;
+            padding: 5px;
+        }
+		
+		.hero
+		{
+		    /*background: rgb(52, 152, 219);;*/
+		    margin: 40px;
+		}
+		
+		.indent
+		{
+		    background: #2c3e50;
+		    padding: 20px;
+		    box-sizing: content-box;
+		    margin-top: 0px;
+		}
+		
+		.main-gallery
+		{
+		    
+		}
+		
+		.gallery-cell h3
+		{
+		    margin: 0px;
+		}
+		
+		.button
+		{
+		    color: white;
+		    border: 1px solid #FFF;
+		}
+		
+		.button:hover, .button:focus
+		{
+		    background: #34495e;
+		    color: white;
+		}
+		
+		.spacer-right 
+		{
+		    margin-right: 10px;
+		}

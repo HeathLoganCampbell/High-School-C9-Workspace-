@@ -1,0 +1,202 @@
+/* Space out content a bit */
+body 
+{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: url("img/Pattern.png");
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+
+
+/*.navbar-default .navbar-nav > li.dropdown:hover > a, */
+/*.navbar-default .navbar-nav > li.dropdown:hover > a:hover,*/
+/*.navbar-default .navbar-nav > li.dropdown:hover > a:focus {*/
+/*    background-color: rgb(231, 231, 231);*/
+/*    color: rgb(85, 85, 85);*/
+/*}*/
+li.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+ .hero-logo
+  {
+      width: 40%;
+      display: block;
+      margin: 0 auto;
+      padding-top: 20px;
+      
+      /*position: absolute;*/
+      /*transform: translate(-50%, -112%);*/
+      /*left: 50%;*/
+  }
+
+/* Custom page header */
+.header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+/* Custom page footer */
+.footer 
+{
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  padding: 14px 24px;
+  font-size: 21px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+#blue
+{
+  background: #337ab7;
+  border-color: #337ab7; 
+  color: #fff;
+}
+
+
+
+.sell-box ul li
+{
+  font-size: 18px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+  width: 380px;
+}
+
+.text-center
+{
+  text-align: center;
+}
+
+.sell-box
+{
+  width: 390px;
+  margin: 30px auto;
+}
+
+.gray
+{
+  color: #777;
+}
+
+.container
+{
+  background-color: white;
+  padding: 20px 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 100%;
+}
+
+.container:first-child
+{
+  margin: 0px auto;
+}
+
+.store
+{
+    background: #5cb85c !important;
+    color: white;
+}
+
+
+.store:hover
+{
+    background: #f2dede !important;
+    color: #31708f;
+    border: 2px solid #5cb85c; 
+    padding: 8px 13px;
+}
+
+.heads
+{
+  margin: 20px 0px;
+}
+
+.heads img
+{
+  border-radius: 9px;
+  margin: 3.5px;
+}
+
+.full-size
+{
+  width: 100%;
+}
+
+.footer
+{
+    position: relative;
+    clear: both;
+}
+
+.panel-heading
+{
+    background: #2ecc71 !important;
+    color: white !important;
+}
+
+.panel-heading .pull-right
+{
+    color: white !important;
+}

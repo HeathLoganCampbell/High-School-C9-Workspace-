@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Heath Logan Campbell's Website | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--[if IE]>
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"></script> 
+	    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	    <link href="assets/css/style.css" rel="stylesheet">
+    <![endif]-->
+    
+</head>
+
+<body>
+    <div id="loadingScreen" style="position: fixed;top: 50%;left: 50%;margin-top: -50px;margin-left: -58px;" align="center">
+        <i class="fa fa-refresh fa-spin fa-3x fa-fw"></i><br><br>
+        <h1 class="sr-only">Loading...</h1>
+    </div>
+    <div id="loading" style="display:none;">
+        	<div class="section hero">
+        		<div class="container">
+        			<div class="row">
+        				<div class="one-half column">
+        					<h4 class="hero-heading">Heath Logan Campbell</h4>
+                  			<a class="spacer-right button button-primary" onclick="alert('Yeah, nah')" href="#">Contact Me</a>
+                  			<a class="spacer-right button" onclick="alert('Yeah, nah')" href="#">Need Help?</a>
+                  			<a class="spacer-right button" onclick="alert('Yeah, nah')" href="#">Store</a>
+        				</div>
+        			</div>
+        		 </div>
+        		 </div>
+        		 <div class="indent">
+        		     
+        		                 <div class="main-gallery">
+                                    <div class="gallery-cell">
+                                        <center>
+                                            <h3>Example</h3>
+                                            <p>Some cool stuff, maybe a website? maybe some code?</p>
+                                            <a class="button" onclick="alert('Yeah, nah')" href="#">View</a>
+                                        </center>
+                                    </div>
+                                    <div class="gallery-cell">
+                                        <center>
+                                            <h3>GitHub <i class="fa fa-github fa-1x" aria-hidden="true"></i></h3>
+                                            <p>Just my github. I don't do too much on it but it's there. Feel free to look!</p>
+                                            <a class="button" href="https://github.com/HeathLoganCampbell">View</a>
+                                        </center>
+                                    </div>
+                                    <div class="gallery-cell">
+                                        <center>
+                                            <h3>Website</h3>
+                                            <p>For only $40 per month get a website with hosting, to put your bussiness online</p>
+                                            <a class="button" href="./website/order.html">Order Now</a>
+                                        </center>
+                                    </div>
+                                    <div class="gallery-cell">
+                                        
+                                    </div>
+                                    <div class="gallery-cell">
+                                        
+                                    </div>
+                                    <div class="gallery-cell">
+        
+                                    </div>
+                                    <div class="gallery-cell">
+                                        
+                                    </div>
+                                 </div>
+        		     
+        			            <!--<div id="slick">-->
+                       <!--             <div>-->
+                       <!--                 <center><h3>Example 1</h3></center>-->
+                       <!--             </div>-->
+                       <!--             <div>-->
+                       <!--                 <center><h3>Example 2</h3></center>-->
+                       <!--             </div>-->
+                       <!--             <div>-->
+                       <!--                 <center><h3>Example 3</h3></center>-->
+                       <!--             </div>-->
+                       <!--             <div>-->
+                       <!--                 <center><h3>Example 4</h3></center>-->
+                       <!--             </div>-->
+                       <!--             <div>-->
+                       <!--                 <center><h3>Example 5</h3></center>-->
+                       <!--             </div>-->
+                       <!--             <div>-->
+                       <!--                 <center><h3>Example 6</h3></center>-->
+                       <!--             </div>-->
+                       <!--         </div>-->
+                                <script>
+                                    function r(f){/in/.test(document.readyState)?setTimeout('r('+f+')',9):f()}
+                                    r(function() {
+                                        var flkty = new Flickity( '.main-gallery', {
+                                          // options
+                                          cellAlign: 'left',
+                                          contain: true,
+                                          wrapAround: true,
+                                          freeScroll: true,
+                                          pageDots: false,
+                                          autoPlay: true,
+                                          prevNextButtons: false
+                                        });
+                                        // var slick = $('#slick').slick({
+                                        //     autoplay: true,
+                                        //     centerMode:true,
+                                        //     autoplaySpeed: 1200,
+                                        //     speed: 700,
+                                        //     prevArrow: false,
+                                        //     nextArrow: false,
+                                        //     slidesToShow: 3,
+                                        //     variableWidth: true,
+                                        //     adaptiveHeight: true,
+                                        // });
+                                    });
+                                </script>
+        		    </div>
+    		</div>
+	</div>
+	
+	<!--[if !IE]> -->
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" lazyload="1"/>
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" lazyload="1" /> 
+	    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" lazyload="1" />
+	     <link href="assets/css/style.css" rel="stylesheet" lazyload="1" />
+    <!-- <![endif]-->
+	<script async type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script async src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function()
+        {
+            $('#loadingScreen').css('display', 'none');
+            $('#loading').css('display', 'block');
+        })
+        // setTimeout(function()
+        // {
+        //     $('#loadingScreen').css('display', 'none');
+        //     $('#loading').css('display', 'block');
+        // }, 100)
+    
+    </script>
+    </body>
+</html>
